@@ -1,0 +1,117 @@
+body {
+    overflow-x:hidden;
+}
+h1{
+    position: relative;
+margin: 50px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+#titulo{
+    position: absolute;
+    top:0px;
+    background-color: rgb(186, 202, 236);
+    height: 140px;
+    width: 99.0%;
+}
+p{
+    position: relative;
+    margin-top: 80px;
+    left: 530px;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;   
+}
+table{
+    margin-top: 30px;
+}
+table tr td{
+    position: relative;
+    border:solid 2px;
+    left: 410px;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;   
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 10px;
+    left: 530px;
+    font-size: 20px; 
+}
+#h2{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 10px;
+    left: 530px;
+    font-size: 20px; 
+}
+button{
+    position: relative;
+    margin-top: 20px;
+    left: 530px;
+    background-color:  rgb(186, 202, 236);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.iniciar button:hover{
+    background-color: black;
+    color:white;
+}
+.iniciar button:active{
+    background-color: white;
+    color:black;
+}
+.res button:hover{
+    background-color: black;
+    color:white;
+}
+.res button:active{
+    background-color: white;
+    color:black;
+}
+.act button:hover{
+    background-color:rgb(77, 0, 80);
+    color:white;
+}
+.act button:active{
+    background-color: white;
+    color:black;
+}
+#nombre{
+    position: relative;
+    margin-top: 0px;
+    left: 530px;
+    font-size: 20px; 
+    border-radius: 5px 10px 5px 10px;
+    width:390px;
+}
+#edad{
+    position: relative;
+    margin-top: 0px;
+    left: 530px;
+    font-size: 20px; 
+    border-radius: 5px 10px 5px 10px;
+    width:390px;
+}
+#act{
+    position: absolute;
+    font-family: cursive;
+    left: 10px;
+    font-size: 20px; 
+    top:645px;
+}
+
+#RES{
+    
+    font-family: cursive;
+    font-size: 20px; 
+    margin-top: 18px;
+    margin-left: 650px;
+}
+
+
