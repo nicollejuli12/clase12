@@ -28,12 +28,16 @@
         <td> Output: 5 caracteres.</td>
         </tr>
     </table>
-
+    <div class="iniciar">
+    <button onclick="onClickIniciar()" id="Iniciar" >Iniciar</button></div>
+<div id="ocultar">
 <from id="Mostrar">
-    <h3>Por favor ingrese su texto:</h3>
-    <textarea name="cont" id="cont" onpaste="cont();" onkeyup="cont();"></textarea>
-    <div class=red2 id="RES" name="B"><ac>DATOS ESTUDIANTE<br /><br /></ac></div>
+    <h3 id="h3">Por favor ingrese su texto:</h3>
+    <br>
+    <textarea name="cont" id="cont" onpaste="cont();" onkeyup="cont();"placeholder="Digita un texto"></textarea>
+    <div class=red2 id="RES" name="RES">Su resultado aparecera aquí<br/></div>
     </from>
+</div>
     <script type="text/javascript" src="js/ejercicio1.js"></script>
 
 </body>

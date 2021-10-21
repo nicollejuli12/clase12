@@ -1,7 +1,14 @@
+document.getElementById ('ocultar').hidden = true;
+document.getElementById ('act').hidden = true;
+
+function onClickIniciar() {
+    document.getElementById('ocultar').hidden = false;
+    }
+    
 let tipo;
 function Texto(tipo){
     tipo = document.getElementById('tipo').value;
-    var div = document.getElementById('B');
+    var div = document.getElementById('RES');
     var imprimir = document.createElement("span");
     div.appendChild(imprimir);
      if(tipo==="") {
@@ -9,11 +16,14 @@ function Texto(tipo){
      }else if(tipo<=0||tipo>=0){
         imprimir.textContent = ("Número");
     }
-    else {//if (tipo='a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s,t,u,v,w,x,y,z')
+    else {
         imprimir.innerHTML = ("Texto");
     }
 }
     
 function mostrar() {
     Texto(tipo);
+    document.getElementById('resul').hidden = true;
+    document.getElementById('act').hidden = false;
+
 }

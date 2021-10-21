@@ -37,7 +37,7 @@ table tr td{
 h3{
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     left: 530px;
     font-size: 20px; 
 }
@@ -50,6 +50,7 @@ button{
     font-size: 20px;
     border-radius: 5px 5px 5px 5px;
 }
+
 .iniciar button:hover{
     background-color: black;
     color:white;
@@ -58,20 +59,42 @@ button{
     background-color: white;
     color:black;
 }
-#cont{
+.res button:hover{
+    background-color: black;
+    color:white;
+}
+.res button:active{
+    background-color: white;
+    color:black;
+}
+.act button:hover{
+    background-color:rgb(77, 0, 80);
+    color:white;
+}
+.act button:active{
+    background-color: white;
+    color:black;
+}
+#tipo{
     position: relative;
     margin-top: 0px;
     left: 530px;
     font-size: 20px; 
     border-radius: 5px 10px 5px 10px;
-    width:430px;
+    width:290px;
 }
+
 #RES{
     font-family: cursive;
-    position: relative;
-    margin-top: 20px;
-    left: 530px;
     font-size: 20px; 
+    margin-top: -30px;
+    margin-left: 700px;
 }
 
-
+#act{
+    position: absolute;
+    font-family: cursive;
+    left: 10px;
+    font-size: 20px; 
+    margin-top: -50px;
+}

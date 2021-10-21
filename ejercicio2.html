@@ -4,25 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio 2</title>
-    <!-- <link rel="stylesheet" href="css/cursos.css"> -->
+    <link rel="stylesheet" href="css/ejercicio2.css">
 </head>
 <body>
+    <div id="titulo"></div>
 <h1>Ejercicio 2</h1>
 <p>
-    2.	Realizar una aplicación web que permita identificar si el valor ingresado por el usuario es un tipo de dato texto o número. Ejemplos:
-	Input: palabra				Output:  texto
-<br>Input: 3					Output: número
-<br>Input: 3gb				Output: texto
-<br>Input: 3.5				Output: número
-<br>Input: 3,5G				Output: texto
-
-
-</p>
+    2.	Realizar una aplicación web que permita identificar <br>
+    si el valor ingresado por el usuario es un tipo de dato <br>
+    texto o número. Ejemplos:</p>
+    <table>
+        <tr>
+            <td>Input: palabra </td>
+            <td>Output: texto</td>
+        </tr>
+        <tr>
+            <td>Input: 3</td>
+            <td>Output: número</td>
+        </tr>
+        <tr>
+            <td>Input: 3gb	</td>
+            <td>Output: texto</td>
+        </tr>
+        <tr>
+            <td>Input: 3.5</td>
+            <td>Output: número</td>
+        </tr>
+        <tr>
+            <td>Input: 3,5G	</td>
+            <td>Output: texto</td>
+        </tr>
+    </table>			
+<div class="iniciar">
+    <button onclick="onClickIniciar()" id="Iniciar" >Iniciar</button></div>
+<div id="ocultar">
     <from id="Mostrar">
-    <h2>Palabra:</h2><input type="text" id="tipo" />
-    <button type="button" onclick="mostrar()">Resultado</button>
-    <div class=red2 id="B" name="B"><ac>DATOS ESTUDIANTE<br /><br /></ac></div>
+    <h3>Palabra:</h3><input type="text" id="tipo" placeholder="Digita algo"/>
+   <div class="res" id="resul"><button type="button" onclick="mostrar()">Resultado</button></div> 
+   
+    <div class=red2 id="RES" name="RES"><br /><br /></div>
     </from>
+</div>
+<div>
+   <div class="act" id="act"><button type="button" onclick="location.reload()">Actualizar</button></div> 
+</div>
     <script type="text/javascript" src="js/ejercicio2.js"></script>
 
 </body>
