@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="css/ejercicio1.css">
+
+</head>
+<body>
+    <div id="titulo"></div>
+<h1>Ejercicio 1</h1>
+
+<p>
+    1.Realizar una aplicación web que permita <br>
+    contar la cantidad de caracteres de un <br>texto ingresado por el usuario. Ejemplos:
+</p>
+    <table>
+        <tr>
+            <td> Input: palabra</td>
+            <td> Output:  7 caracteres</td> 
+        </tr>
+        <tr><td> Input: Taller de prueba</td>
+        <td>Output: 16 caracteres</td>
+        </tr>
+        <tr>
+            <td> Input: árbol</td>
+        <td> Output: 5 caracteres.</td>
+        </tr>
+    </table>
+
+<from id="Mostrar">
+    <h3>Por favor ingrese su texto:</h3>
+    <textarea name="cont" id="cont" onpaste="cont();" onkeyup="cont();"></textarea>
+    <div class=red2 id="RES" name="B"><ac>DATOS ESTUDIANTE<br /><br /></ac></div>
+    </from>
+    <script type="text/javascript" src="js/ejercicio1.js"></script>
+
+</body>
+</html>
