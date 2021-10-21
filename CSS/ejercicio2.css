@@ -11,14 +11,14 @@ margin: 50px;
 #titulo{
     position: absolute;
     top:0px;
-    background-color: thistle;
+    background-color: rgb(186, 202, 236);
     height: 140px;
     width: 99.0%;
 }
 p{
     position: relative;
     margin-top: 90px;
-    left: 560px;
+    left: 510px;
     text-align: justify;
     font-family: cursive;
     font-size: 20px;   
@@ -29,7 +29,7 @@ table{
 table tr td{
     position: relative;
     border:solid 2px;
-    left: 530px;
+    left: 610px;
     text-align: justify;
     font-family: cursive;
     font-size: 20px;   
@@ -38,14 +38,14 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     margin-top: 10px;
-    left: 530px;
+    left: 610px;
     font-size: 20px; 
 }
 button{
     position: relative;
     margin-top: 20px;
-    left: 530px;
-    background-color:  thistle;
+    left: 610px;
+    background-color:  rgb(186, 202, 236);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 5px 5px 5px 5px;
@@ -78,23 +78,25 @@ button{
 #tipo{
     position: relative;
     margin-top: 0px;
-    left: 530px;
+    left: 610px;
     font-size: 20px; 
     border-radius: 5px 10px 5px 10px;
     width:290px;
 }
-
-#RES{
-    font-family: cursive;
-    font-size: 20px; 
-    margin-top: -30px;
-    margin-left: 700px;
-}
-
 #act{
     position: absolute;
     font-family: cursive;
     left: 10px;
     font-size: 20px; 
-    margin-top: -50px;
+    top:610px;
 }
+
+#RES{
+    
+    font-family: cursive;
+    font-size: 20px; 
+    margin-top: -38px;
+    margin-left: 770px;
+}
+
+
