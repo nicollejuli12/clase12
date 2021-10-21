@@ -11,7 +11,7 @@ margin: 50px;
 #titulo{
     position: absolute;
     top:0px;
-    background-color: rgb(186, 202, 236);
+    background-color: rgb(186, 236, 219);
     height: 140px;
     width: 99.0%;
 }
@@ -52,7 +52,7 @@ button{
     position: relative;
     margin-top: 20px;
     left: 530px;
-    background-color:  rgb(186, 202, 236);
+    background-color:  rgb(186, 236, 219);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 5px 5px 5px 5px;
