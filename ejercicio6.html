@@ -5,29 +5,101 @@
     <meta charset="UTF-8">
     <title>Ejercicio 6</title>
     <link rel="shortcut icon" href="resources/6.png">
-    <!-- <link rel="stylesheet" href="css/cursos.css"> -->
-<style>
-    .encontrado{
-        color:red;
-    }
-</style>
+    <link rel="stylesheet" href="css/ejercicio6.css">
 </head>
+
 <body>
-<h1>Ejercicio 6</h1>
-<p>
-    6.	Realizar una aplicación que permite buscar contenido en un texto. <br>
-    El usuario debe ingresar un texto (oración, párrafos, etc.) y debe ingresar el texto a buscar,<br>
-     El sistema debe mostrar o resaltar las coincidencias encontradas en el texto. Ejemplo: 
-</p>
-<form id="buscar">
-    <textarea id="texto" cols="150" rows="10"></textarea>
-    <h2>Palabra:</h2><input type="text" id="palabra" />
-
-</form>
-    <button id="button" >Resultado</button>
-    <div class=red2 id="resultado" name="B"><ac>DATOS ESTUDIANTE<br /><br /></ac></div>
-
+    <div id="titulo"></div>
+    
+    <h1>Ejercicio 6</h1>
+    <p>
+        6. Realizar una aplicación que permite buscar contenido en un texto. <br>
+        El usuario debe ingresar un texto (oración, párrafos, etc.) y debe ingresar el texto a buscar,<br>
+        El sistema debe mostrar o resaltar las coincidencias encontradas en el texto. Ejemplo:
+    </p>
+    <table>
+        <tr>
+            <td>Input: [
+                Texto a buscar: es, <br>
+                párrafo: Hola estudiantes de programación
+                ] </td>
+            <td>Output:
+                Hola <font color="red">es</font>tudiant<font color="red">es</font> de programación.</td>
+        </tr>
+        <tr>
+            <td>Input: [
+                Texto a buscar: a, <br>
+                párrafo: La programación es el proceso utilizado para idear y ordenar las acciones necesarias para
+                realizar un proyecto,
+                preparar ciertas máquinas o aparatos para que empiecen a funcionar en el momento y en la forma deseados
+                o elaborar
+                <br>programas para su empleo en computadoras
+                ]
+            </td>
+            <td>
+                Output:
+                L<font color="red">a</font> progr<font color="red">a</font>m<font color="red">a</font>ción es el proceso utiliz<font color="red">a</font>do p<font color="red">a</font>r<font color="red">a</font> ide<font color="red">a</font>r y orden<font color="red">a</font>r l<font color="red">a</font>s <font color="red">a</font>cciones neces<font color="red">a</font>ri<font color="red">a</font>s p<font color="red">a</font>r<font color="red">a</font> re<font color="red">a</font>liz<font color="red">a</font>r un
+                proyecto,
+                prep<font color="red">a</font>r<font color="red">a</font>r ciert<font color="red">a</font>s máquin<font color="red">a</font>s o <font color="red">a</font>p<font color="red">a</font>r<font color="red">a</font>tos p<font color="red">a</font>r<font color="red">a</font> que empiecen <font color="red">a</font> funcion<font color="red">a</font>r en el momento y en l<font color="red">a</font> form<font color="red">a</font> dese<font color="red">a</font>dos
+                o el<font color="red">a</font>bor<font color="red">a</font>r
+                <br>progr<font color="red">a</font>m<font color="red">a</font>s p<font color="red">a</font>r<font color="red">a</font> su empleo en comput<font color="red">a</font>dor<font color="red">a</font>s.
+            </td>
+        </tr>
+        <tr>
+            <td>Input: [
+                Texto a buscar: para, <br>
+                párrafo:La programación es el proceso utilizado para idear y ordenar las acciones necesarias para
+                realizar un proyecto,
+                preparar ciertas máquinas o aparatos para que empiecen a funcionar en el momento y en la forma deseados
+                o elaborar
+                <br>programas para su empleo en computadoras
+                ]
+            </td>
+            <td> Output:
+                <br>La programación es el proceso utilizado <font color="red">para</font> idear y ordenar las acciones necesarias <font color="red">para</font> realizar
+                un proyecto,
+                pre<font color="red">para</font>r ciertas máquinas o a<font color="red">para</font>tos <font color="red">para</font> que empiecen a funcionar en el momento y en la forma deseados
+                o elaborar
+                <br>programas <font color="red">para</font> su empleo en computadoras
+            </td>
+        </tr>
+        <tr>
+            <td>Input: [
+                Texto a buscar: idear y ordenar, <br>
+                párrafo: La programación es el proceso utilizado para idear y ordenar las acciones necesarias para
+                realizar un proyecto,
+                preparar ciertas máquinas o aparatos para que empiecen a funcionar en el momento y en la forma deseados
+                o elaborar
+                <br>programas para su empleo en computadoras
+                ]
+            </td>
+            <td> Output:
+                <br>La programación es el proceso utilizado para <font color="red">idear y ordenar</font> las acciones necesarias para realizar
+                un proyecto,
+                preparar ciertas máquinas o aparatos para que empiecen a funcionar en el momento y en la forma deseados
+                o elaborar
+                <br>programas para su empleo en computadoras.
+            </td>
+        </tr>
+    </table>
+    <a href="#seccion">
+        <div class="iniciar">
+            <button onclick="onClickIniciar()" id="Iniciar">Iniciar</button>
+        </div>
+    </a>
+    <a name="seccion">
+        <div id="ocultar">
+            <form id="buscar">
+                <textarea id="texto" cols="150" rows="10" placeholder="Agregue un párrafo o una oración"></textarea>
+                <h3>Texto a buscar:</h3><input type="text" id="palabra" placeholder="Digite el texto a buscar"/>
+            </form>
+            <div class="res" id="resul"><button id="button">Resultado</button></div>
+        </div>
+        <div class=red2 id="RES" name="RES"></div>
+        <div class="act" id="act"><button type="button" onclick="location.reload()">Actualizar</button></div>
+    </a>
     <script type="text/javascript" src="js/ejercicio6.js"></script>
 
 </body>
+
 </html>

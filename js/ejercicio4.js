@@ -36,9 +36,9 @@ function NOTAS(nombre, materia, nota1, nota2, nota3) {
     if (PROM < 0 || PROM > 5 || nota1 < 0 || nota1 > 5 || nota2 < 0 || nota2 > 5 || nota3 < 0 || nota3 > 5) {//|| PROM < .0 || PROM > .5 |||| nota1 > .0 || nota1 < .5 || nota2 > .0 || nota2 < .5 || nota3 > .0 || nota3 < .5 
         imprimir.innerHTML = ("Nota no válida".fontcolor('red'));
     } else if (PROM >= 0 && PROM < 3) {
-        imprimir.innerHTML = ("Lo siento  " + nombre + ", su nota es ".fontcolor('red') + PROM.toFixed(2).fontcolor('red') + " no pasaste la materia " + materia + " ");
+        imprimir.innerHTML = ("Lo siento  " + nombre + ", su nota es ".fontcolor('red') + PROM.toFixed(2).fontcolor('red') + ", no pasaste la materia " + materia + " ");
     } else if (PROM >= 3 && PROM <= 5) {
-        imprimir.innerHTML = ("Felicitaciones  " + nombre + ", su nota es  ".fontcolor('green') + PROM.toFixed(2).fontcolor('green') + " pasaste la materia " + materia + " ");
+        imprimir.innerHTML = ("Felicitaciones  " + nombre + ", su nota es  ".fontcolor('green') + PROM.toFixed(2).fontcolor('green') + ", pasaste la materia " + materia + " ");
     }
 
 }
