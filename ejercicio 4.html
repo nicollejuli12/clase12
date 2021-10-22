@@ -5,38 +5,58 @@
     <meta charset="UTF-8">
     <title>Ejercicio 4</title>
     <link rel="shortcut icon" href="resources/4.png">
-    <!-- <link rel="stylesheet" href="css/cursos.css"> -->
+    <link rel="stylesheet" href="css/ejercicio4.css">
 </head>
+
 <body>
-<h1>Ejercicio 4</h1>
-4.	Realizar una aplicación web que permita saber si un usuario pasa o pierde una materia. 
-<br>La aplicación debe pedirle al usuario que ingrese el nombre de la persona, el nombre de la materia, <br>
-y debe pedirle 3 notas.
- <br>El algoritmo debe calcular el promedio de las 3 notas y determinar con ese promedio si pasa o no la materia.
- <br> Si el promedio es menor a 3.0, debe indicar que perdió la materia, 
- <br>pero si es igual o superior a 3.0 debe indicar que paso la materia. 
- <br>Debe usar colores como el rojo o el verde para indicar que si se pasa o se pierde la materia. Ejemplos:
-<br>
-<br>	Input: [Nombre: Pedro, Materia:Programación, Nota 1: 4, Nota 2: 3.5, Nota 3: 5]	
-<br>Output: Felicitaciones Pedro, su nota es 4.16, Pasaste la materia Programación.
-
-<br>Input: [Nombre: Pedro, Materia:Sistemas Op, Nota 1: 1, Nota 2: 3, Nota 3: 2.3]	
-<br>Output: Lo siento Pedro, su nota es 2.1, No pasaste la materia Sistemas Op.
-
-<br>Input: [Nombre: Juan, Materia:Sistemas Op, Nota 1: 2.5, Nota 2: 3, Nota: 3.5 ]	
-<br>Output: Felicitaciones Juan, su nota es 3, Pasaste la materia Programación.
-
+    <div id="titulo"></div>
+    <h1>Ejercicio 4</h1>
+    <p>
+        4. Realizar una aplicación web que permita saber si un usuario pasa o pierde una materia.
+        <br>La aplicación debe pedirle al usuario que ingrese el nombre de la persona, el nombre
+        de la <br>materia, y debe pedirle 3 notas.
+        <br>El algoritmo debe calcular el promedio de las 3 notas y determinar con ese promedio si
+        <br>pasa o no la materia.
+        <br>Si el promedio es menor a 3.0, debe indicar que perdió la materia, pero si es igual o <br>
+        superior a 3.0 debe indicar que paso la materia.
+        <br>Debe usar colores como el rojo o el verde para indicar que si se pasa o se pierde la materia. <br>Ejemplos:
     </p>
+    <table>
 
+        <tr>
+            <td>Input: [Nombre: Pedro, Materia:Programación, Nota 1: 4, Nota 2: 3.5, Nota 3: 5] </td>
+            <td>Output: Felicitaciones Pedro, su nota es 4.16, Pasaste la materia Programación.</td>
+        </tr>
+        <tr>
+            <td>Input: [Nombre: Pedro, Materia:Sistemas Op, Nota 1: 1, Nota 2: 3, Nota 3: 2.3]</td>
+            <td>Output: Lo siento Pedro, su nota es 2.1, No pasaste la materia Sistemas Op.</td>
+        </tr>
+        <tr>
+            <td>Input: [Nombre: Juan, Materia:Sistemas Op, Nota 1: 2.5, Nota 2: 3, Nota: 3.5 ]</td>
+            <td>Output: Felicitaciones Juan, su nota es 3, Pasaste la materia Programación.</td>
+        </tr>
+    </table>
+    <a href="#seccion">
+    <div class="iniciar">
+        <button onclick="onClickIniciar()" id="Iniciar">Iniciar</button>
+    </div>
+</a>
+    <a name="seccion">
+    <div id="ocultar">
     <from id="Mostrar">
-    <h2>Nombres:</h2><input type="text" id="nombre" />
-    <h2>Materia:</h2><input type="text" id="materia" />
-    <h2>Nota 1:</h2><input type="number" id="nota1" />
-    <h2>Nota 2:</h2><input type="number" id="nota2" />
-    <h2>Nota 3:</h2><input type="number" id="nota3" />
-    <button type="submit" onclick="mostrar()">Resultado</button>
-    <div class=red2 id="C" name="C"><ac>DATOS ESTUDIANTE <br /><br /></ac></div>
+        <h3>Nombres:</h3><input type="text" id="nombre"  placeholder="Digite su nombre"/>
+        <h2 id="h1">Materia:</h2><input type="text" id="materia"  placeholder="Digite su materia"/>
+        <h2 id="h2">Nota 1:</h2><input type="number" id="nota1" />
+        <h2 id="h3">Nota 2:</h2><input type="number" id="nota2" />
+        <h2 id="h4"> Nota 3:</h2><input type="number" id="nota3" />
+        <div class="res" id="resul"><button type="submit" onclick="mostrar()">Resultado</button></div>
+        <div class=red2 id="RES" name="RES"></div>
+
     </from>
+    </div>
+    <div class="act" id="act"><button type="button" onclick="location.reload()">Actualizar</button></div>
+</a>
     <script type="text/javascript" src="js/ejercicio4.js"></script>
 </body>
+
 </html>

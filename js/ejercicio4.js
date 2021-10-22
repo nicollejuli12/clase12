@@ -1,3 +1,9 @@
+document.getElementById ('ocultar').hidden = true;
+document.getElementById ('act').hidden = true;
+
+    function onClickIniciar() {
+    document.getElementById('ocultar').hidden = false;
+    }
 function NOTAS(nombre, materia, nota1, nota2, nota3) {
 
     nombre = document.getElementById('nombre').value;
@@ -8,7 +14,7 @@ function NOTAS(nombre, materia, nota1, nota2, nota3) {
     nota1 = parseFloat(nota1);
     nota2 = parseFloat(nota2);
     nota3 = parseFloat(nota3);
-    var div = document.getElementById('C');
+    var div = document.getElementById('RES');
     var imprimir = document.createElement("span");
     div.appendChild(imprimir);
     if (nombre === "") {
@@ -24,19 +30,20 @@ function NOTAS(nombre, materia, nota1, nota2, nota3) {
     }
     var notass = new nota(nota1, nota2, nota3);
     var PROM = ((notass.n1 + notass.n2 + notass.n3) / 3);
-    var div = document.getElementById('C');
+    var div = document.getElementById('RES');
     var imprimir = document.createElement("span");
     div.appendChild(imprimir);
     if (PROM < 0 || PROM > 5 || nota1 < 0 || nota1 > 5 || nota2 < 0 || nota2 > 5 || nota3 < 0 || nota3 > 5) {//|| PROM < .0 || PROM > .5 |||| nota1 > .0 || nota1 < .5 || nota2 > .0 || nota2 < .5 || nota3 > .0 || nota3 < .5 
-        imprimir.innerHTML = ("Nota no valida".fontcolor('red'));
+        imprimir.innerHTML = ("Nota no válida".fontcolor('red'));
     } else if (PROM >= 0 && PROM < 3) {
-        imprimir.innerHTML = ("Lo siento  " + nombre + " su nota es ".fontcolor('red') + PROM.toFixed(2).fontcolor('red') + " no pasaste la materia " + materia + " ");
+        imprimir.innerHTML = ("Lo siento  " + nombre + ", su nota es ".fontcolor('red') + PROM.toFixed(2).fontcolor('red') + " no pasaste la materia " + materia + " ");
     } else if (PROM >= 3 && PROM <= 5) {
-        imprimir.innerHTML = ("FELICIDADES  " + nombre + "su nota es  ".fontcolor('green') + PROM.toFixed(2).fontcolor('green') + " pasaste la materia " + materia + " ");
+        imprimir.innerHTML = ("Felicitaciones  " + nombre + ", su nota es  ".fontcolor('green') + PROM.toFixed(2).fontcolor('green') + " pasaste la materia " + materia + " ");
     }
 
 }
 function mostrar() {
     NOTAS(nombre, materia, nota1, nota2, nota3);
-
+    document.getElementById('resul').hidden = true;
+    document.getElementById('act').hidden = false;
 }

@@ -1,0 +1,180 @@
+body {
+    overflow-x: hidden;
+}
+h1 {
+    position: relative;
+    margin: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+#titulo {
+    position: absolute;
+    top: 0px;
+    background-color: rgb(236, 218, 186);
+    height: 140px;
+    width: 100%;
+}
+p {
+    position: relative;
+    margin-top: 80px;
+    left: 350px;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;
+}
+table {
+    margin-top: 30px;
+}
+table tr td {
+    position: relative;
+    border: solid 2px;
+    left: 58px;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 18px;
+}
+#Iniciar{
+    left: 705px;
+
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 10px;
+    left: 480px;
+    font-size: 20px;
+}
+#h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 10px;
+    left: 480px;
+    font-size: 20px;
+}
+#h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 10px;
+    left: 480px;
+    font-size: 20px;
+}
+#h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 10px;
+    left: 480px;
+    font-size: 20px;
+}
+#h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 10px;
+    left: 480px;
+    font-size: 20px;
+}
+#h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 10px;
+    left: 480px;
+    font-size: 20px;
+}
+button {
+    position: relative;
+    margin-top: 20px;
+    left: 530px;
+    background-color: rgb(236, 218, 186);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.iniciar button:hover {
+    background-color: black;
+    color: white;
+}
+.iniciar button:active {
+    background-color: white;
+    color: black;
+}
+.res button:hover {
+    background-color: black;
+    color: white;
+}
+.res button:active {
+    background-color: white;
+    color: black;
+}
+.act button:hover {
+    background-color: rgb(77, 0, 80);
+    color: white;
+}
+.act button:active {
+    background-color: white;
+    color: black;
+}
+#nombre {
+    position: absolute;
+    top: 618px;
+    left: 590px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    width: 390px;
+}
+#materia {
+    position: absolute;
+    top: 660px;
+    left: 590px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+
+    width: 390px;
+}
+#nota1 {
+    position: absolute;
+    top: 700px;
+    left: 590px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    width: 40px;
+}
+#nota2 {
+    position: absolute;
+    top: 730px;
+    left: 590px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+
+    margin-top: 10px;
+    width: 40px;
+}
+#nota3 {
+    position: absolute;
+    top: 780px;
+    left: 590px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    width: 40px;
+}
+
+#act {
+    position: absolute;
+    font-family: cursive;
+    font-size: 20px;
+    top:680px;
+    left:120px;
+}
+
+#RES {
+    font-family: cursive;
+    font-size: 20px;
+    position:absolute;
+    top:740px;
+    left:650px;
+}
+#resul{
+    position:absolute;
+    top:680px;
+    left:120px;
+}

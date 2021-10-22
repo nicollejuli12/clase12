@@ -1,0 +1,102 @@
+body {
+    overflow-x:hidden;
+}
+h1{
+    position: relative;
+margin: 50px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+#titulo{
+    position: absolute;
+    top:0px;
+    background-color: rgb(203, 248, 250);
+    height: 140px;
+    width: 99.0%;
+}
+p{
+    position: relative;
+    margin-top: 90px;
+    left: 440px;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;   
+}
+table{
+    margin-top: 30px;
+}
+table tr td{
+    position: relative;
+    border:solid 2px;
+    left: 460px;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;   
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 550px;
+    left: 590px;
+    font-size: 20px; 
+}
+button{
+    position: relative;
+    margin-top: 20px;
+    left: 460px;
+    background-color:  rgb(203, 248, 250);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.iniciar button:hover{
+    background-color: black;
+    color:white;
+}
+.iniciar button:active{
+    background-color: white;
+    color:black;
+}
+.res button:hover{
+    background-color: black;
+    color:white;
+}
+.res button:active{
+    background-color: white;
+    color:black;
+}
+.act button:hover{
+    background-color:rgb(77, 0, 80);
+    color:white;
+}
+.act button:active{
+    background-color: white;
+    color:black;
+}
+#numero{
+    position: absolute;
+    top: 568px;
+    left: 680px;
+    font-size: 20px; 
+    border-radius: 5px 5px 5px 5px;
+    width:100px;
+}
+#act{
+    position: absolute;
+    font-family: cursive;
+    left: 7px;
+    font-size: 20px; 
+    top:600px;
+}
+
+#RES{
+    position: absolute;
+    font-family: cursive;
+    font-size: 20px; 
+    left:590px;
+    top:620px;
+}
+
+

@@ -1,7 +1,13 @@
+document.getElementById ('ocultar').hidden = true;
+document.getElementById ('act').hidden = true;
+
+function onClickIniciar() {
+    document.getElementById('ocultar').hidden = false;
+    }
 function Num(numero) {
 
     numero = document.getElementById('numero').value;
-    var div = document.getElementById('B');
+    var div = document.getElementById('RES');
     var imprimir = document.createElement("span");
     div.appendChild(imprimir);
     // numero = parseInt(numero);
@@ -21,5 +27,6 @@ function Num(numero) {
 }
 function mostrar() {
     Num(numero);
-
+    document.getElementById('resul').hidden = true;
+    document.getElementById('act').hidden = false;
 }
