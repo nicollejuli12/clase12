@@ -54,6 +54,7 @@ button{
 .iniciar button:hover{
     background-color: black;
     color:white;
+    cursor:pointer;
 }
 .iniciar button:active{
     background-color: white;
@@ -61,6 +62,7 @@ button{
 }
 .res button:hover{
     background-color: black;
+    cursor:pointer;
     color:white;
 }
 .res button:active{
@@ -68,7 +70,8 @@ button{
     color:black;
 }
 .act button:hover{
-    background-color:rgb(77, 0, 80);
+    background-color:rgb(88, 0, 0);
+    cursor:pointer;
     color:white;
 }
 .act button:active{

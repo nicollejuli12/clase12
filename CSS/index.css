@@ -1,0 +1,112 @@
+header{
+    position: fixed;
+    top:230px;
+    border:solid 2px;
+    left:400px;
+    width: 700px;
+    height: 310px;
+    border-radius: 10px 10px 10px 10px ;
+    box-shadow: 15px 16px 25px 1px rgba(20, 18, 18, 0.247);
+}    
+body{
+    background-image:url("https://st2.depositphotos.com/2267983/7155/i/600/depositphotos_71559811-stock-photo-blurred-pastel-background.jpg") ;
+    background-size: 2000px;
+}
+h2{
+    position: absolute;
+top:40px;
+left:400px;
+font-family:cursive;
+
+}
+#h22{
+    position: absolute;
+    top:40px;
+    left:880px;
+    font-family:cursive;
+}
+#h23{
+    position: absolute;
+    top:550px;
+    left:880px;
+    font-family:cursive;
+}
+#ej{
+    position:absolute;
+    left:20px;
+    top:-50px;
+}
+#ejercicios{
+    position:absolute;
+    left:5px;
+    top:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#en{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+#enlaces{
+    position:absolute;
+    left:460px;
+    top:30px;
+}
+.btn{
+    left:450px;
+}
+.b button:hover{
+    color:white;
+    cursor:pointer;
+}
+.b button:active{
+    color:orange;
+}
+#btn1{
+    position:absolute;
+    top:62px;
+    background-color:  thistle;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+#btn2{
+    position:absolute;
+    background-color:  rgb(186, 202, 236);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    top:99px;
+}
+#btn3{
+    position:absolute;
+    background-color:  rgb(186, 236, 219);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    top:134px;
+}
+#btn4{
+    position:absolute;
+    background-color: rgb(236, 218, 186);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    top:173px;
+}
+#btn5{
+    position:absolute;
+    background-color:  rgb(203, 248, 250);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    top:210px;
+}
+#btn6{
+    position:absolute;
+    background-color:  rgb(243, 250, 203);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    top:246px;
+}

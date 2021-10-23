@@ -41,6 +41,10 @@ h3{
     left: 530px;
     font-size: 20px; 
 }
+.botonimagen{
+    background-image:url(imagen.jpg);
+  }
+  
 button{
     position: relative;
     margin-top: 20px;
@@ -53,6 +57,8 @@ button{
 .iniciar button:hover{
     background-color: black;
     color:white;
+    cursor:pointer;
+
 }
 .iniciar button:active{
     background-color: white;
